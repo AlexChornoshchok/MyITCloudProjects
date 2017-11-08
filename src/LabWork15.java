@@ -145,13 +145,9 @@ public class LabWork15 {
     }
 
     static void lab7(){
-        int sum;
         for(int n=1;n<1000;n++) {
-            sum=0;
-            for(int m=1;m<=n;m++) {
-                if (n==m){
-                    continue;
-                }
+            int sum=0;
+            for(int m=1;m<=n/2;m++) {
                 if(n%m==0){
                     sum=sum+m;
                 }
@@ -170,6 +166,6 @@ public class LabWork15 {
 //
 //
 //        }
-
-    }
+//
+//    }
 }
