@@ -11,6 +11,7 @@ public class LabWork21 {
             computers[index].setFrequencyCPU(1200);
             computers[index].setQuantityCPU(2);
             computers[index].setPrice(100f);
+        }
 
 
         for (Computer element : computers) {
