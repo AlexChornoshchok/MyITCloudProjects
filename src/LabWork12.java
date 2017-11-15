@@ -14,6 +14,7 @@ public class LabWork12 {
         System.out.println("    * *   *  *   *  *   *");
         System.out.println("*   * *****   * *   *****");
         System.out.println(" ***  *   *    *    *   *");
+        
     }
     static void LabWork_12_2() {
             System.out.println("Wat is you Name?");
