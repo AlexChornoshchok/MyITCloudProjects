@@ -1,3 +1,5 @@
+package com.ua.LabWork1.LabWork16;
+
 import java.util.Arrays;
 
 public class LabWork16 {

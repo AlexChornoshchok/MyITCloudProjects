@@ -1,3 +1,5 @@
+package com.ua.LabWork1.labWork14;
+
 public class LabWork14 {
     public static void main(String[] arg){
         byte b1,b2;

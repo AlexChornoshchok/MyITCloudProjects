@@ -1,3 +1,5 @@
+package com.ua.LabWork2.LabWork21;
+
 public class LabWork21 {
 
     public static void main(String... arg) {

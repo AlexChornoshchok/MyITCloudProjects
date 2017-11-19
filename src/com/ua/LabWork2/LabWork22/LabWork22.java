@@ -1,3 +1,5 @@
+package com.ua.LabWork2.LabWork22;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -79,7 +81,7 @@ public class LabWork22 {
         for (int[] elementMatrix : resaltMatrix) {
             System.out.println(Arrays.toString(elementMatrix));
         }
-        System.out.println("Matrix multiplication");
+        System.out.println("com.ua.LabWork2.LabWork22.Matrix multiplication");
         resaltMatrix = Matrix.getMultiplicationMatrix();
         for (int[] elementMatrix : resaltMatrix) {
             System.out.println(Arrays.toString(elementMatrix));
