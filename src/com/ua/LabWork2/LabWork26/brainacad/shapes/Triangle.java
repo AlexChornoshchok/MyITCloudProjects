@@ -40,7 +40,7 @@ public class Triangle {
         }
 
         if (sumSmallSide < bigSide){
-            return "Triangle does not exist";
+            return "TriangleSecond does not exist";
         }else if (sumSmallSide < bigSide){
             return "Area of a triangle = 0";
         }else{
