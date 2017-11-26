@@ -1,4 +1,4 @@
-package com.ua.LabWork2.LabWork27;
+package com.ua.LabWork2.LabWork27_28;
 
 public class EthernetAdapter extends Device {
     int speed;

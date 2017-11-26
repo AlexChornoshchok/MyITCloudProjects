@@ -1,4 +1,4 @@
-package com.ua.LabWork1.labWork14;
+package com.ua.lab1.labWork14;
 
 public class LabWork14 {
     public static void main(String[] arg){

@@ -1,4 +1,4 @@
-package com.ua.LabWork1.LabWork12;
+package com.ua.lab1.LabWork12;
 
 import java.util.Scanner;
 

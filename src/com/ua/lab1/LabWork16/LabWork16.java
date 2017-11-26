@@ -1,4 +1,4 @@
-package com.ua.LabWork1.LabWork16;
+package com.ua.lab1.LabWork16;
 
 import java.util.Arrays;
 
