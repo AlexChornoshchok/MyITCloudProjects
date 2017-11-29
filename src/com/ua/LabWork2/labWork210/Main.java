@@ -2,6 +2,8 @@ package com.ua.LabWork2.labWork210;
 
 import com.ua.LabWork2.LabWork27_28.brainacad.oop.testshapes.*;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String... args) {
 
@@ -29,11 +31,59 @@ public class Main {
                 "Triangle:GREEN:9,7,12",
                 "Circle:BLACK:10"};
 
+/*      // Laboratory work 2_10_4
         groupShape = new Shape[arrayStr.length];
         for (int index = 0; index < arrayStr.length; index++) {
             groupShape[index] = Shape.parseShape(arrayStr[index]);
             groupShape[index].draw();
         }
+*/
+
+        // Laboratory work 2_10_5
+        StringBuilder strBuild = new StringBuilder();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the number 3");
+        String[] arrayStr1 = new String[scan.nextInt()];
+        for (int index = 0; index < arrayStr1.length; index++) {
+            System.out.print("Enter the shape name: ");
+            strBuild.append((scan.next() + ":"));
+
+            switch (strBuild.toString().toLowerCase()) {
+                case "circle:":
+                    System.out.print("Enter the color of the shape: ");
+                    strBuild.append((scan.next() + ":"));
+                    System.out.print("Enter the radius: ");
+                    strBuild.append(scan.next());
+                    break;
+                case "rectangle:":
+                    System.out.print("Enter the color of the shape: ");
+                    strBuild.append((scan.next() + ":"));
+                    System.out.println("Enter the values of 2 sides: ");
+                    strBuild.append((scan.next() + ","));
+                    strBuild.append(scan.next());
+                    break;
+                case "triangle:":
+                    System.out.print("Enter the color of the shape: ");
+                    strBuild.append((scan.next() + ":"));
+                    System.out.println("Enter the values of 3 sides: ");
+                    strBuild.append((scan.next() + ","));
+                    strBuild.append((scan.next() + ","));
+                    strBuild.append(scan.next());
+                    break;
+                default:
+                    System.out.println("Wrong date");
+                    break;
+
+            }
+            arrayStr1[index] = strBuild.toString();
+            strBuild.setLength(0);
+        }
+        groupShape = new Shape[arrayStr1.length];
+        for (int index = 0; index < arrayStr1.length; index++) {
+            groupShape[index] = Shape.parseShape(arrayStr1[index]);
+            groupShape[index].draw();
+        }
+
     }
 
     static Long compute(Byte b, Integer i) {
