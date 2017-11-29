@@ -1,6 +1,8 @@
 package com.ua.LabWork2.LabWork27_28.brainacad.oop.testshapes;
 
-public class Circle extends Shape implements Comparable{
+import java.util.Objects;
+
+public class Circle extends Shape implements Comparable {
     protected final static float PI = 3.14f;
     protected double radius;
 
@@ -57,4 +59,12 @@ public class Circle extends Shape implements Comparable{
         long temp = Double.doubleToLongBits(radius);
         return (int) (temp ^ (temp >>> 32));
     }
+
+    public static com.ua.LabWork2.LabWork27_28.brainacad.oop.testshapes.Circle parseCircle(String str) {
+        String[] arrayStr = str.split(":|,");
+        if (Objects.equals(arrayStr[0].toLowerCase(), "circle"))
+            return new Circle(arrayStr[1], Double.parseDouble(arrayStr[2]));
+        else return new Circle("", 0);
+    }
 }
+

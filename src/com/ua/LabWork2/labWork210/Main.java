@@ -24,10 +24,19 @@ public class Main {
 //        System.out.println(compute(b1, i1));
 
         // Laboratory work 2_10_3
-        Shape sh1;
+        Shape[] groupShape;
+        String[] arrayStr = {"Rectangle:RED:10,20",
+                "Triangle:GREEN:9,7,12",
+                "Circle:BLACK:10"};
+
+        groupShape = new Shape[arrayStr.length];
+        for (int index = 0; index < arrayStr.length; index++) {
+            groupShape[index] = Shape.parseShape(arrayStr[index]);
+            groupShape[index].draw();
+        }
     }
 
-    static Long compute(Byte b, Integer i){
+    static Long compute(Byte b, Integer i) {
         return (b.longValue() + i.longValue());
     }
 }

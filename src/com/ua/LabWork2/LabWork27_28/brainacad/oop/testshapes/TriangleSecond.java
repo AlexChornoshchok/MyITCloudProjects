@@ -1,5 +1,7 @@
 package com.ua.LabWork2.LabWork27_28.brainacad.oop.testshapes;
 
+import java.util.Objects;
+
 public class TriangleSecond extends Shape implements Comparable {
     double a, b, c;
 
@@ -26,19 +28,19 @@ public class TriangleSecond extends Shape implements Comparable {
             sumSmallSide = b + a;
         }
 
-        if (sumSmallSide < bigSide){
+        if (sumSmallSide < bigSide) {
             return 0;
-        }else if (sumSmallSide < bigSide){
+        } else if (sumSmallSide < bigSide) {
             return 0;
-        }else{
-            double s = (a+b+c)*0.5f;
-            return Math.sqrt(s*(s-a)*(s-b)*(s-c));
+        } else {
+            double s = (a + b + c) * 0.5f;
+            return Math.sqrt(s * (s - a) * (s - b) * (s - c));
         }
     }
 
     @Override
     public String toString() {
-        return "This is Triangle, color " +super.getColor()+
+        return "This is Triangle, color " + super.getColor() +
                 ", a=" + a +
                 ", b=" + b +
                 ", c=" + c;
@@ -55,5 +57,12 @@ public class TriangleSecond extends Shape implements Comparable {
     public int compareTo(Object o) {
         Shape triangle = (Shape) o;
         return (super.getColor().compareTo(triangle.getColor()));
+    }
+
+    public static TriangleSecond parseTriang(String str) {
+        String[] arrayStr = str.split(":|,");
+        if (Objects.equals(arrayStr[0].toLowerCase(), "triangle"))
+            return new TriangleSecond(arrayStr[1], Double.parseDouble(arrayStr[2]), Double.parseDouble(arrayStr[3]), Double.parseDouble(arrayStr[4]));
+        else return new TriangleSecond("", 0, 0, 0);
     }
 }

@@ -1,5 +1,7 @@
 package com.ua.LabWork2.LabWork27_28.brainacad.oop.testshapes;
 
+import java.util.Objects;
+
 public class Rectangle extends Shape implements Comparable {
     private double wigth;
     private double height;
@@ -41,5 +43,12 @@ public class Rectangle extends Shape implements Comparable {
     public int compareTo(Object o) {
         Shape rectangle = (Shape) o;
         return (super.getColor().compareTo(rectangle.getColor()));
+    }
+
+    public static com.ua.LabWork2.LabWork27_28.brainacad.oop.testshapes.Rectangle parseRectangle(String str) {
+        String[] arrayStr = str.split(":|,");
+        if (Objects.equals(arrayStr[0].toLowerCase(), "rectangle")) {
+            return new Rectangle(arrayStr[1], Double.parseDouble(arrayStr[2]), Double.parseDouble(arrayStr[3]));
+        } else return new Rectangle("", 0, 0);
     }
 }
