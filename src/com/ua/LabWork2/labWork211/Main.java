@@ -30,14 +30,14 @@ public class Main {
 
     TestExsiption testEx = new TestExsiption(10);
 
-    try {
-        int i = testEx.divisionEx(0);
-        System.out.println("result "+i);
-    } catch (MyExseption ex){
-        System.out.println("Error massag: "+ex.getMessage());
-    } catch (Exception ex) {
-        System.out.println("Error.");
-    }
+//    try {
+//        int i = testEx.divisionEx(0);
+//        System.out.println("result "+i);
+//    } catch (MyExseption ex){
+//        System.out.println("Error massag: "+ex.getMessage());
+//    } catch (Exception ex) {
+//        System.out.println("Error.");
+//    }
 }
 
 

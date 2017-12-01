@@ -10,10 +10,10 @@ public class TestExsiption {
     public int divisionEx(int x) throws MyExseption {
         int result;
         result = y/x;
-        {
+
         MyExseption myEx  = new MyExseption("Divide by 0");
         throw myEx;
-        }
+
  //       return result;
     }
 }
