@@ -1,4 +1,4 @@
-package com.ua.lab1.LabWork16;
+package com.ua.lab1.array16;
 
 import java.util.Arrays;
 
@@ -8,7 +8,6 @@ public class LabWork16 {
 //        lab1();
 //        lab6();
         lab7();
-
     }
 
     static void lab7() {
@@ -24,13 +23,10 @@ public class LabWork16 {
 //                    if() {
                         System.out.print(iterator2Level + ",");
 //                    }
-
                 }
-
             }
             System.out.println("]");
         }
-
     }
 
     static void lab6() {
@@ -62,14 +58,10 @@ public class LabWork16 {
                         resaltArray[index] = element;
                         index++;
                     }
-
                 }
-
             }
-
         }
         System.out.println(Arrays.toString(resaltArray));
-
     }
 
     static void lab1() {
@@ -81,6 +73,5 @@ public class LabWork16 {
             }
         }
         System.out.println(Arrays.toString(arr1));
-
     }
 }
