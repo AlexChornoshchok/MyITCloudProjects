@@ -1,7 +1,7 @@
 package com.ua.LabWork2.labWork213Enum;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
+
 
 public class Main {
     public static void main(String... args) {
@@ -32,19 +32,15 @@ public class Main {
         // Laboratory work 2_13_5
         //enum  Suit {SPADE, DIAMOND, CLUB, HEART};
 
-        Card[] cardDeck = new Card[52];
-        Suit newSuit = Suit.CLUB;
-        Rank newRank = Rank.ACE;
-        for (int suteIndex = 0; suteIndex < 4; suteIndex++){
-            newSuit = newSuit.nextSuit();
-            for (int rankIndex = 0; rankIndex < 13; rankIndex++) {
-                newRank = newRank.nextRank();
-                cardDeck[suteIndex * 13 + rankIndex] = new Card(newSuit, newRank);
+ /*       List<Card> cardDeck = new ArrayList<>();
+        for(Suit suit: Suit.values()) {
+            for(Rank rank: Rank.values()) {
+                cardDeck.add(suit, rank);
             }
         }
-
+*/
  //       Arrays.toString(cardDeck);
-        for(Card element: cardDeck)
+/*        for(Card element: cardDeck)
         System.out.println(element.toString());
-    }
+ */   }
 }
