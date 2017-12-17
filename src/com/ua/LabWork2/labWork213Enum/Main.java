@@ -22,14 +22,14 @@ public class Main {
 */
 
 /*
-        // Laboratory work 2_13_4
+        // Laboratory work 2_13_3
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the day of the week");
         MyDayOfWeek nextDay = MyDayOfWeek.valueOf(scan.nextLine());
         nextDay.nextDay();
 */
 
-        // Laboratory work 2_13_5
+        // Laboratory work 2_13_4
         //enum  Suit {SPADE, DIAMOND, CLUB, HEART};
 
  /*       List<Card> cardDeck = new ArrayList<>();
@@ -39,8 +39,12 @@ public class Main {
             }
         }
 */
- //       Arrays.toString(cardDeck);
-/*        for(Card element: cardDeck)
-        System.out.println(element.toString());
- */   }
+        // Laboratory work 2_13_5
+        for (Suit sute: Suit.values()) {
+            for (Rank rank: Rank.values()) {
+                System.out.print(new Card(sute, rank));
+            }
+            System.out.println();
+        }
+    }
 }

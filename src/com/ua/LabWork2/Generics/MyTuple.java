@@ -1,4 +1,4 @@
-package com.ua.LabWork2.labWork214Generics;
+package com.ua.LabWork2.Generics;
 
 public class MyTuple<A,B,C> {
     private A varA;

@@ -1,16 +1,16 @@
 package com.ua.LabWork2.labWork213Enum;
 
 public class Card {
-    private Suit cardSuit;
-    private Rank cardRank;
+    private Suit suit;
+    private Rank rank;
 
-    public Card(Suit cardSuit, Rank cardRank) {
-        this.cardSuit = cardSuit;
-        this.cardRank = cardRank;
+    public Card(Suit suit, Rank rank) {
+        this.suit = suit;
+        this.rank = rank;
     }
 
     @Override
     public String toString() {
-        return ("The acrd: " + cardSuit +"_" + cardRank);
+        return ("[" + suit + rank + "]");
     }
 }
