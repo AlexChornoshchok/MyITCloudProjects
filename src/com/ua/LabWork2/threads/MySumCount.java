@@ -1,4 +1,4 @@
-package com.ua.LabWork2.Thread;
+package com.ua.LabWork2.threads;
 
 public class MySumCount implements Runnable {
 
@@ -35,8 +35,19 @@ public class MySumCount implements Runnable {
     public void run() {
         System.out.println(Thread.currentThread().getName());
         this.resultSum = intArray[startIndex];
-        for (int i = startIndex+1; i <= stopIndex; i++){
-            this.resultSum+=intArray[i];
+        if ((stopIndex - startIndex) > 0) {
+            for (int i = startIndex + 1; i <= stopIndex; i++) {
+//            System.out.println(Thread.currentThread().getName());
+                this.resultSum += intArray[i];
+//            System.out.println(this.resultSum);
+            }
+        } else if((stopIndex - startIndex) < 0) {
+            for (int i = 0; i < stopIndex; i++) {
+                this.resultSum += intArray[i];
+            }
+            for (int i = startIndex-1; i < intArray.length; i++) {
+                this.resultSum += intArray[i];
+            }
         }
     }
 }

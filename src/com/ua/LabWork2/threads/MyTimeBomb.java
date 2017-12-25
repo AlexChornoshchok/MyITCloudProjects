@@ -1,4 +1,4 @@
-package com.ua.LabWork2.Thread;
+package com.ua.LabWork2.threads;
 
 public class MyTimeBomb implements Runnable {
     @Override

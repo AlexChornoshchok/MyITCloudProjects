@@ -1,4 +1,4 @@
-package com.ua.LabWork2.Thread;
+package com.ua.LabWork2.threads;
 
 public class Storage {
     private  int number;
@@ -9,5 +9,10 @@ public class Storage {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    @Override
+    public String toString() {
+        return "Storage number=" + number;
     }
 }
